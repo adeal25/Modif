@@ -1,6 +1,7 @@
 import pygame
-from oop.bullets.arrow import Arrow
-from oop.bullets.fire import Fire
+# from oop.bullets.arrow import Arrow
+# from oop.bullets.fire import Fire
+from oop.bullets.ball import Ball
 from oop.control import GameController
 from oop.scene import Scene
 from oop.levels.level1 import Level1
@@ -22,8 +23,9 @@ scene.setup_level(
 )
 
 scene.next_level()
+scene.next_level()
 
-player = Player(scene, Fire())
+player = Player(scene, Ball())
 game_controller = GameController(player)
 
 running = True
